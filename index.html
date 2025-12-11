@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marketing Widget – AI-Driven Growth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind CDN (fine for now, warning in console is harmless) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              mwBg: "#020617",
+              mwCard: "#020617",
+              mwAccent: "#22c55e",
+              mwAccentSoft: "#bbf7d0",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-mwBg text-slate-100">
+    <div class="min-h-screen flex flex-col">
+      <!-- Top bar -->
+      <header
+        class="border-b border-slate-800/80 bg-black/40 backdrop-blur sticky top-0 z-20"
+      >
+        <div
+          class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3"
+        >
+          <div class="flex items-center gap-2">
+            <div
+              class="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 to-sky-500 flex items-center justify-center text-black font-bold text-lg"
+            >
+              M
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="font-semibold tracking-tight">Marketing Widget</span>
+              <span class="text-xs text-slate-400"
+                >AI-Driven GTM & Growth Lab</span
+              >
+            </div>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a href="#solutions" class="hover:text-white">Solutions</a>
+            <a href="#outcomes" class="hover:text-white">Outcomes</a>
+            <a href="#process" class="hover:text-white">Process</a>
+            <a href="#contact" class="hover:text-white">Work With Us</a>
+          </nav>
+
+          <a
+            href="#contact"
+            class="hidden md:inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-black shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition"
+          >
+            Book a Strategy Call
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="flex-1">
+        <section
+          class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] gap-10 items-center"
+        >
+          <!-- Left column -->
+          <div class="space-y-6">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300"
+            >
+              <span
+                class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400"
+              ></span>
+              AI-powered growth engine for real businesses
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-semibold leading-tight">
+              Turn <span class="text-emerald-400">traffic</span> into
+              <span class="underline decoration-emerald-500 decoration-2"
+                >predictable revenue</span
+              >
+              with one smart widget.
+            </h1>
+
+            <p class="text-slate-300 text-sm md:text-base max-w-xl">
+              Marketing Widget plugs into your website, ad stack and CRM to
+              capture every qualified visitor, route them into the right
+              journey, and show you exactly what is working — in one live,
+              AI-curated dashboard.
+            </p>
+
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition"
+              >
+                Get a Live Demo
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                href="#solutions"
+                class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2.5 text-sm font-medium text-slate-200 hover:border-slate-500 transition"
+              >
+                Explore solutions
+              </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 text-xs text-slate-300">
+              <div>
+                <div class="text-lg font-semibold text-white">3–7×</div>
+                <div class="text-slate-400">Higher lead capture</div>
+              </div>
+              <div>
+                <div class="text-lg font-semibold text-white">40%</div>
+                <div class="text-slate-400">
+                  Less wasted ad spend (avg.)
+                </div>
+              </div>
+              <div>
+                <div class="text-lg font-semibold text-white">15 min</div>
+                <div class="text-slate-400">To plug into your website</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column: dark preview card -->
+          <div
+            class="rounded-3xl bg-[#020617] border border-slate-800 shadow-[0_0_0_1px_rgba(15,23,42,0.9)] p-4 md:p-5 flex flex-col gap-4"
+          >
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span>Live Widget Preview</span>
+              <span class="inline-flex items-center gap-1">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                Tracking sessions
+              </span>
+            </div>
+
+            <div
+              class="rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900 to-black p-4 space-y-3 text-xs"
+            >
+              <div class="flex items-center justify-between">
+                <div class="space-y-1">
+                  <div class="text-[10px] uppercase tracking-[0.14em] text-slate-400">
+                    Current visitor
+                  </div>
+                  <div class="text-sm font-medium text-white">
+                    Campaign: <span class="text-emerald-300">Google / Brand</span>
+                  </div>
+                </div>
+                <div class="rounded-xl bg-emerald-500/10 px-3 py-1 text-[11px] text-emerald-300 border border-emerald-500/40">
+                  Fit score: <span class="font-semibold">89%</span>
+                </div>
+              </div>
+
+              <div class="border-t border-slate-800 pt-3 grid grid-cols-3 gap-3">
+                <div class="space-y-1">
+                  <div class="text-[10px] uppercase text-slate-500">
+                    Segment
+                  </div>
+                  <div class="text-xs text-slate-200">
+                    B2B · SaaS · ANZ
+                  </div>
+                </div>
+                <div class="space-y-1">
+                  <div class="text-[10px] uppercase text-slate-500">
+                    Path
+                  </div>
+                  <div class="text-xs text-slate-200">
+                    Homepage → Pricing
+                  </div>
+                </div>
+                <div class="space-y-1">
+                  <div class="text-[10px] uppercase text-slate-500">
+                    Intent
+                  </div>
+                  <div class="text-xs text-emerald-300">
+                    High · Demo-ready
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-2 flex gap-2 text-[11px]">
+                <button
+                  class="flex-1 rounded-full bg-emerald-500/90 px-3 py-1.5 font-medium text-black hover:bg-emerald-400 transition"
+                >
+                  Trigger playbook
+                </button>
+                <button
+                  class="flex-1 rounded-full border border-slate-700 bg-slate-900/40 px-3 py-1.5 text-slate-200 hover:border-slate-500 transition"
+                >
+                  View journey
+                </button>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/80 p-4">
+              <div class="flex items-center justify-between mb-3 text-xs">
+                <span class="text-slate-300">This week’s pipeline drivers</span>
+                <span class="text-slate-500">Last 7 days</span>
+              </div>
+              <ul class="space-y-2 text-xs">
+                <li class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-2">
+                    <span class="h-1.5 w-6 rounded-full bg-emerald-400"></span>
+                    <span class="text-slate-200">Brand search → Demo</span>
+                  </div>
+                  <span class="text-emerald-300 font-medium">+41%</span>
+                </li>
+                <li class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-2">
+                    <span class="h-1.5 w-6 rounded-full bg-sky-400"></span>
+                    <span class="text-slate-200">Retargeting → Webinar</span>
+                  </div>
+                  <span class="text-emerald-300 font-medium">+23%</span>
+                </li>
+                <li class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-2">
+                    <span class="h-1.5 w-6 rounded-full bg-amber-400"></span>
+                    <span class="text-slate-200">Outbound → Planner</span>
+                  </div>
+                  <span class="text-slate-400 font-medium">Stable</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact / CTA -->
+        <section id="contact" class="border-t border-slate-800/70 bg-black/30">
+          <div class="max-w-4xl mx-auto px-4 py-10 space-y-4">
+            <h2 class="text-xl md:text-2xl font-semibold">
+              Ready to wire in your growth engine?
+            </h2>
+            <p class="text-sm text-slate-300 max-w-2xl">
+              Share your website and current stack, and we’ll come back with a
+              mini growth blueprint, not a sales pitch. No obligations, no fluff.
+            </p>
+
+            <form
+              class="grid md:grid-cols-[minmax(0,1.2fr)_minmax(0,1.2fr)] gap-3 text-sm"
+            >
+              <input
+                type="text"
+                placeholder="Full name"
+                class="rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+              />
+              <input
+                type="email"
+                placeholder="Work email"
+                class="rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+              />
+              <input
+                type="url"
+                placeholder="Website URL"
+                class="rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 md:col-span-2"
+              />
+              <textarea
+                rows="3"
+                placeholder="What are you trying to fix or scale right now?"
+                class="rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 md:col-span-2"
+              ></textarea>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition md:w-max"
+              >
+                Send me a growth blueprint
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-800 bg-black/60">
+        <div
+          class="max-w-6xl mx-auto px-4 py-4 text-[11px] text-slate-500 flex flex-wrap items-center justify-between gap-2"
+        >
+          <span>© <span id="year"></span> Marketing Widget. Built with care.</span>
+          <span>Work with love, for love, because of love.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+</html>
